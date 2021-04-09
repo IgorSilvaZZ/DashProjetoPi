@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Helmet from 'react-helmet';
 
 import Modal from '../Modal';
 
@@ -33,8 +32,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#00b894">50%</TextFooterHeader>
-                            <TextFooterHeader color="#00b894">12H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -42,8 +40,7 @@ const VisaoGeral = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031">90%</TextFooterHeader>
-                            <TextFooterHeader color="#d63031">9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -51,8 +48,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#00b894">50%</TextFooterHeader>
-                            <TextFooterHeader color="#00b894">12H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -60,8 +56,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#00b894">50%</TextFooterHeader>
-                            <TextFooterHeader color="#00b894">12H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -69,8 +64,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#00b894">50%</TextFooterHeader>
-                            <TextFooterHeader color="#00b894">12H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -78,8 +72,7 @@ const VisaoGeral = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031">90%</TextFooterHeader>
-                            <TextFooterHeader color="#d63031">9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                 </ItemContainer>

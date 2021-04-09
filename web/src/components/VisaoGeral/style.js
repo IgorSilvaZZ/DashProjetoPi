@@ -75,6 +75,7 @@ export const FooterHeader = styled.div`
 export const TextFooterHeader = styled.p`
     color: #718093;
     font-weight: 600;
-    font-size: 20px;
+    font-size: ${props => props.fontSize};
+    /* font-size: 20px; */
     color: ${props => props.color};
 `;

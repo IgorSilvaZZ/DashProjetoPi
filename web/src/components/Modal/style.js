@@ -28,8 +28,12 @@ export const ItemInformation = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 40%;
     width: 95%;
+    overflow-y: ${props => props.scrollActive ? "scroll" : "unset"};
+    overflow-y: ${props => props.scrollActive ? "auto" : "unset"};
+    cursor: ${props => props.scrollActive ? "pointer" : "unset"};
 `;
 
 export const Item = styled.div`
@@ -60,7 +64,6 @@ export const ItemMain = styled.div`
     height: 90%;
     width: 35%;
     border-right: ${props => props.border ? "2px solid #718093" : "0px"};
-
 `;
 
 export const ContainerMain = styled.div`
@@ -111,12 +114,13 @@ export const ContainerHeader = styled.div`
 
 export const ImgClose = styled.img`
     height: 60%;
+    cursor: pointer; 
 `;
 
 export const ModalStyled = styled.div`
     border-radius: 20px;
-    max-width: 800px;
-    margin: 80px auto 0 auto;
+    max-width: ${props => props.size};
+    margin: ${props => props.cpuDetails ? "20px auto 0 auto" : "80px auto 0 auto"};
     padding: 15px;
     background: #1e272e;
 `;
@@ -128,5 +132,5 @@ export const ModalOverlay = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5)
 `;

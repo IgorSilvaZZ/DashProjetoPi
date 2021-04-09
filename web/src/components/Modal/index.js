@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+
+import ModalCpuDetails from './ModalCpudetails';
 
 import {
     ModalStyled,
@@ -25,13 +27,15 @@ import gpuImg from '../../assets/graphics-card.svg';
 
 const Modal = ({ isOpen, onClickClose }) => {
 
+    const [ openModalDetails, setOpenModalDetails ] = useState(false);
+
     if(!isOpen){
         return null;
     }
 
     return ReactDOM.createPortal(
         <ModalOverlay>
-            <ModalStyled>
+            <ModalStyled size={"800px"}>
                 <ContainerHeader>
                     <p>Devices Info</p>
                     <ImgClose onClick={onClickClose} src={closeButton} />
@@ -44,6 +48,7 @@ const Modal = ({ isOpen, onClickClose }) => {
                         <h3>Lucius Desktop</h3>
                         <p><i>(Online)</i></p>
                     </ItemTitle> 
+                    
                 </ContainerTitle>
                 <ContainerMain>
                     <ItemMain border>
@@ -71,20 +76,20 @@ const Modal = ({ isOpen, onClickClose }) => {
                     <ItemMain border justify>
                         <ItemInformation>
                             <DivInfo size={"30%"}>
+                                <img src={hardDisk}  />
+                            </DivInfo>
+                            <DivInfo size={"70%"}>
+                                <p>Disco:</p>
+                                <h2>28%</h2>
+                            </DivInfo>
+                        </ItemInformation>
+                        <ItemInformation>
+                            <DivInfo size={"30%"}>
                                 <img src={imgMemoryRam}  />
                             </DivInfo>
                             <DivInfo size={"70%"}>
                                 <p>RAM:</p>
                                 <h2>30%</h2>
-                            </DivInfo>
-                        </ItemInformation>
-                        <ItemInformation>
-                            <DivInfo size={"30%"}>
-                                <img src={gpuImg}  />
-                            </DivInfo>
-                            <DivInfo size={"70%"}>
-                                <p>GPU:</p>
-                                <h2>75%</h2>
                             </DivInfo>
                         </ItemInformation>
                     </ItemMain>
@@ -98,14 +103,22 @@ const Modal = ({ isOpen, onClickClose }) => {
                                 <h2>68%</h2>
                             </DivInfo>
                         </ItemInformation>
-                        <ItemInformation>
+                        <ItemInformation scrollActive>
                             <DivInfo size={"30%"}>
-                                <img src={hardDisk}  />
+                                <img src={gpuImg} onClick={() => setOpenModalDetails(true)} />
                             </DivInfo>
                             <DivInfo size={"70%"}>
-                                <p>Disco:</p>
-                                <h2>28%</h2>
+                                <p>GPU:</p>
+                                <h2>75%</h2>
                             </DivInfo>
+                            <DivInfo size={"30%"}>
+                                <img src={gpuImg}  />
+                            </DivInfo>
+                            <DivInfo size={"70%"}>
+                                <p>GPU:</p>
+                                <h2>75%</h2>
+                            </DivInfo>
+                            <ModalCpuDetails isVisible={openModalDetails} onCloseClick={() => setOpenModalDetails(false)} />
                         </ItemInformation>
                     </ItemMain>
                 </ContainerMain>
