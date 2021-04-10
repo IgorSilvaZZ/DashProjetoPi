@@ -13,12 +13,12 @@ import {
     ImageCpu,
     DetailsContainer,
     ItemDetails
-} from './styleCpuDetails';
+} from './styleDetails';
 
 import closeButton from '../../assets/close-button.svg';
 import gpuImg from '../../assets/graphics-card.svg';
 
-const ModalCpuDetails = ({ isVisible, onCloseClick }) => {
+const ModalDetails = ({ isVisible, onCloseClick }) => {
 
     if(!isVisible){
         return null;
@@ -57,4 +57,4 @@ const ModalCpuDetails = ({ isVisible, onCloseClick }) => {
 
 }
 
-export default ModalCpuDetails;
+export default ModalDetails;

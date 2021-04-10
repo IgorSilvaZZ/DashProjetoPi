@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import ModalCpuDetails from './ModalCpudetails';
+import ModalDetails from './details';
 
 import {
     ModalStyled,
@@ -118,7 +118,7 @@ const Modal = ({ isOpen, onClickClose }) => {
                                 <p>GPU:</p>
                                 <h2>75%</h2>
                             </DivInfo>
-                            <ModalCpuDetails isVisible={openModalDetails} onCloseClick={() => setOpenModalDetails(false)} />
+                            <ModalDetails isVisible={openModalDetails} onCloseClick={() => setOpenModalDetails(false)} />
                         </ItemInformation>
                     </ItemMain>
                 </ContainerMain>

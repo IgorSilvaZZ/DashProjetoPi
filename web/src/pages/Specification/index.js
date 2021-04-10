@@ -3,22 +3,22 @@ import React from 'react';
 import { 
     BodyContainer,
     ContainerDash,
-} from '../../style';
+} from '../../global';
 
-import TopMovers from '../../components/TopMovers';
+import Specifications from '../../components/Specifications';
 import Menu from '../../components/Menu';
 import InfoUser from '../../components/InfoUser';
 
-const Geral = () => {
+const Specification = () => {
     return (
         <BodyContainer>
             <ContainerDash>
                 <Menu />
-                <TopMovers />
+                <Specifications />
                 <InfoUser />
             </ContainerDash>
         </BodyContainer>
     )
 }
 
-export default Geral;
+export default Specification;

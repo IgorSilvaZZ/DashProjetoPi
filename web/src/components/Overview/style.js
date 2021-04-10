@@ -37,8 +37,8 @@ export const ItemContainer = styled.div`
 export const ItemInfo = styled.div`
     display: flex; 
     flex-direction: column;
-    width: 30%;
-    height: 40%;
+    width: 28%;
+    height: 30%;
     background: #1e272e;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -76,6 +76,5 @@ export const TextFooterHeader = styled.p`
     color: #718093;
     font-weight: 600;
     font-size: ${props => props.fontSize};
-    /* font-size: 20px; */
     color: ${props => props.color};
 `;

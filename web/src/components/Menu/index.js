@@ -39,7 +39,7 @@ const Menu = () => {
                             <img src={dashboardIcon}/>
                         </ImgContainerNav>
                         <TitleContainerNav>
-                            <Link to="/">Especificações</Link>
+                            <Link to="/Specification">Especificações</Link>
                         </TitleContainerNav>
                     </ItemNavBar>
                     <ItemNavBar>
@@ -47,7 +47,7 @@ const Menu = () => {
                             <img src={dashboardIcon}/>
                         </ImgContainerNav>
                         <TitleContainerNav>
-                            <Link>Historico</Link>
+                            <Link to="/Historic">Historico</Link>
                         </TitleContainerNav>
                     </ItemNavBar>
                     <ItemNavBar>
@@ -55,7 +55,7 @@ const Menu = () => {
                             <img src={dashboardIcon}/>
                         </ImgContainerNav>
                         <TitleContainerNav>
-                            <Link>Configurações</Link>
+                            <Link to="/setting">Configurações</Link>
                         </TitleContainerNav>
                     </ItemNavBar>
                     <ItemLogoutNavBar>

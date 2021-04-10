@@ -15,14 +15,13 @@ import {
 import checkedImg from '../../assets/check-mark.svg';
 import errorImg from '../../assets/cancel.svg';
 
-const VisaoGeral = () => {
+const Overview = () => {
 
     const [ open, setOpen ] = useState(false);
 
     return(
         <>
             <ContainerVisaoGeral>
-                {/* <Helmet title="Visão Geral" /> */}
                 <HeaderContainer>
                     <h2>Visão Geral</h2>
                 </HeaderContainer>
@@ -32,7 +31,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -40,7 +39,7 @@ const VisaoGeral = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -48,7 +47,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -56,7 +55,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -64,7 +63,7 @@ const VisaoGeral = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -72,7 +71,7 @@ const VisaoGeral = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                 </ItemContainer>
@@ -82,4 +81,4 @@ const VisaoGeral = () => {
     )
 }
 
-export default VisaoGeral;
+export default Overview;

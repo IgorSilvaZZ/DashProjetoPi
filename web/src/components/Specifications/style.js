@@ -10,6 +10,28 @@ export const ContainerDashMain = styled.div`
     border-radius: 20px;
 `;
 
+export const ItemsCarroussel = styled.div`
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow: hidden;
+`
+
+export const Item = styled.div`
+    flex: none;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+    img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+`
 export const TitleContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
@@ -18,7 +40,11 @@ export const TitleContainer = styled.div`
     width: 90%;
 `;
 
-export const TitleDash = styled.h2`
+export const TitleDash = styled.h1`
+    color: #f5f6fa;
+`;
+
+export const SubtitleDash = styled.h2`
     color: #f5f6fa;
 `;
 
@@ -28,14 +54,15 @@ export const DescribeDash = styled.p`
 `;
 
 export const CointainerGraphics = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 20%;
-    width: 90%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    width: 1100px;
     margin-top: 10px;
     border-radius: 30px;
     background: rgba(0,0,0,0.4);
+    overflow: hidden;
 `;
 
 export const ItemGraphic = styled.div`
@@ -75,9 +102,6 @@ export const TableTopMover = styled.table`
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
-    /* max-height: 500px;
-    display: inline-block; 
-    overflow: auto; */
 
     tr:nth-child(n + 2){
         border-bottom: 1px solid #bdc3c7;
