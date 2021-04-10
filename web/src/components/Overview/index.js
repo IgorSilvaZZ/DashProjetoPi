@@ -31,7 +31,7 @@ const Overview = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -39,7 +39,7 @@ const Overview = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -47,7 +47,7 @@ const Overview = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -55,7 +55,7 @@ const Overview = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -63,7 +63,7 @@ const Overview = () => {
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
@@ -71,7 +71,7 @@ const Overview = () => {
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
                         <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"25px"}>9H</TextFooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px   "}>9H</TextFooterHeader>
                         </FooterHeader>
                     </ItemInfo>
                 </ItemContainer>

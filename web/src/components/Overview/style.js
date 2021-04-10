@@ -27,9 +27,8 @@ export const ItemContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex: 1;
     width: 100%;
-    height: 88%;
+    height: 100%;
     overflow-y: scroll;
     overflow-y: auto;
 `;
@@ -38,7 +37,7 @@ export const ItemInfo = styled.div`
     display: flex; 
     flex-direction: column;
     width: 28%;
-    height: 30%;
+    height: 35%;
     background: #1e272e;
     border-radius: 20px;
     margin-bottom: 20px;
