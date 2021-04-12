@@ -4,7 +4,7 @@ export const ContainerDashMain = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #1B2225;
+    background: #1c1c1c;
     height: 100%;
     width: 64%;
     border-radius: 20px;
@@ -30,8 +30,8 @@ export const Item = styled.div`
     height: 100%;
 
     object-fit: cover;
-}
-`
+}`
+
 export const TitleContainer = styled.div`
     display: flex;
     justify-content: space-evenly;

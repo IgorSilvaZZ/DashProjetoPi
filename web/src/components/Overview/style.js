@@ -4,10 +4,22 @@ export const ContainerVisaoGeral = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #1B2225;
+    background: #1c1c1c;
     height: 100%;
     width: 64%;
     border-radius: 20px;
+`;
+
+export const TitleContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 12%;
+    width: 90%;
+`;
+
+export const TitleOverview = styled.h1`
+    color: #f5f6fa;
 `;
 
 export const HeaderContainer = styled.div`
@@ -15,7 +27,7 @@ export const HeaderContainer = styled.div`
     align-items: center;
     height: 12%;
     width: 100%;
-    color: #718093;
+    color: #f5f6fa;
 
     h2{
         margin-left: 20px;
@@ -38,7 +50,7 @@ export const ItemInfo = styled.div`
     flex-direction: column;
     width: 28%;
     height: 35%;
-    background: #1e272e;
+    background: #333333;
     border-radius: 20px;
     margin-bottom: 20px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);

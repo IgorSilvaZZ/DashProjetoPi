@@ -12,7 +12,7 @@ export const DivInfo = styled.div`
     }
 
     p{
-        color: #718093;
+        color: #f5f6fa;
         font-size: 15px;
     }
 
@@ -49,7 +49,7 @@ export const Item = styled.div`
     }
 
     p{
-        color: #718093;
+        color: #f5f6fa;
         font-size: 11px;
         font-weight: 600; 
     }
@@ -63,7 +63,7 @@ export const ItemMain = styled.div`
     justify-content: ${props => props.justify ? "space-evenly" : "flex-start"};
     height: 90%;
     width: 35%;
-    border-right: ${props => props.border ? "2px solid #718093" : "0px"};
+    border-right: ${props => props.border ? "2px solid #333333" : "0px"};
 `;
 
 export const ContainerMain = styled.div`
@@ -84,7 +84,7 @@ export const ItemTitle = styled.div`
     width: ${props => props.size};
     height: 95%;
     color: #FFF;
-    border-bottom: 1px solid #718093;
+    border-bottom: 1px solid #333333;
 
     p{
         font-size: 15px;
@@ -102,11 +102,11 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: space-between;
     height: 35px;
-    border-bottom: 1px solid #718093;
+    border-bottom: 1px solid #333333;
 
     p {
         font-size: 20px;
-        color: #718093;
+        color: #f5f6fa;
         font-weight: 700; 
     }
 
@@ -122,7 +122,7 @@ export const ModalStyled = styled.div`
     max-width: ${props => props.size};
     margin: ${props => props.cpuDetails ? "20px auto 0 auto" : "80px auto 0 auto"};
     padding: 15px;
-    background: #1e272e;
+    background: #1c1c1c;
 `;
 
 export const ModalOverlay = styled.div`

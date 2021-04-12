@@ -32,7 +32,7 @@ export const ContainerInfosUser = styled.div`
     align-items: center;    
     width: 75%;
     height: 75%;
-    background: #1e272e;
+    background: #1c1c1c;
     border-radius: 20px;
 `;
 

@@ -4,6 +4,8 @@ import Modal from '../Modal';
 
 import {
     ContainerVisaoGeral,
+    TitleContainer,
+    TitleOverview,
     HeaderContainer,
     ItemContainer,
     ItemInfo,
@@ -19,12 +21,12 @@ const Overview = () => {
 
     const [ open, setOpen ] = useState(false);
 
-    return(
+    return (
         <>
             <ContainerVisaoGeral>
-                <HeaderContainer>
-                    <h2>Visão Geral</h2>
-                </HeaderContainer>
+                <TitleContainer>
+                    <TitleOverview>Visão Geral</TitleOverview>
+                </TitleContainer>
                 <ItemContainer>
                     <ItemInfo>
                         <ItemHeader>
