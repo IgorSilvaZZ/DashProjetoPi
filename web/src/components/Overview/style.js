@@ -18,8 +18,22 @@ export const TitleContainer = styled.div`
     width: 90%;
 `;
 
+export const SubTitleContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    height: 15%;
+    width: 100%;
+`;
+
 export const TitleOverview = styled.h1`
     color: #f5f6fa;
+`;
+
+export const SubTitleOverview = styled.p`
+    color: #DAA520;
 `;
 
 export const HeaderContainer = styled.div`

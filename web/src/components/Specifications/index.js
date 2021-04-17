@@ -1,22 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-import {  
+import ModalDetails from '../Modal/details';
+
+import { 
     ContainerDashMain,
     ItemsCarroussel,
     Item,
     TitleContainer,
     TitleDash,
     SubtitleDash,
-    DescribeDash,
     CointainerGraphics,
-    ItemGraphic,
-    ContainerTopMovers,
-    TopMoverItem,
     ContainerInfoMover,
     TableTopMover,
 } from './style';
 
 const Specifications = () => {
+
+    const [ openModalDetails, setOpenModalDetails ] = useState(false);
 
     const refItems = useRef(null);
         useEffect(() => {
@@ -26,7 +26,7 @@ const Specifications = () => {
                     if(refItems?.current?.scrollLeft == 7700){
                         refItems?.current?.scrollTo(0, 0);
                     }
-                },2000)
+                },3000)
             }
         })
     
@@ -66,7 +66,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -74,7 +74,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -82,7 +82,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -90,7 +90,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -98,7 +98,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -106,7 +106,7 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>XXXXX</td>
@@ -114,10 +114,12 @@ const Specifications = () => {
                             <td>XXXXX</td>
                             <td>XXXXX</td>
                             <td>XXXXX</td>
-                            <td><button>+Detalhes</button></td>
+                            <td><button onClick={() => setOpenModalDetails(true)}>+Detalhes</button></td>
                         </tr>
+
                     </TableTopMover>
                 </ContainerInfoMover>
+                <ModalDetails isVisible={openModalDetails} onCloseClick={() => setOpenModalDetails(false)} />
         </ContainerDashMain>
     )
 }

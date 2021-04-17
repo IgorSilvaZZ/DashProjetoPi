@@ -5,7 +5,9 @@ import Modal from '../Modal';
 import {
     ContainerVisaoGeral,
     TitleContainer,
+    SubTitleContainer,
     TitleOverview,
+    SubTitleOverview,
     HeaderContainer,
     ItemContainer,
     ItemInfo,
@@ -29,14 +31,20 @@ const Overview = () => {
                 </TitleContainer>
                 <ItemContainer>
                     <ItemInfo>
-                        <ItemHeader>
-                            <img src={checkedImg} onClick={() => setOpen(true)} />
-                        </ItemHeader>
-                        <FooterHeader>
-                            <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
-                        </FooterHeader>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 01</SubTitleOverview>
+                        </SubTitleContainer>
+                            <ItemHeader>
+                                <img src={checkedImg} onClick={() => setOpen(true)} />
+                            </ItemHeader>
+                            <FooterHeader>
+                                <TextFooterHeader color="#d63031" fontSize={"20px"}>9H</TextFooterHeader>
+                            </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 02</SubTitleOverview>
+                        </SubTitleContainer>
                         <ItemHeader>
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
@@ -45,6 +53,9 @@ const Overview = () => {
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 03</SubTitleOverview>
+                        </SubTitleContainer>
                         <ItemHeader>
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
@@ -53,6 +64,9 @@ const Overview = () => {
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 04</SubTitleOverview>
+                        </SubTitleContainer>
                         <ItemHeader>
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
@@ -61,6 +75,9 @@ const Overview = () => {
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 05</SubTitleOverview>
+                        </SubTitleContainer>
                         <ItemHeader>
                             <img src={checkedImg} onClick={() => setOpen(true)} />
                         </ItemHeader>
@@ -69,6 +86,42 @@ const Overview = () => {
                         </FooterHeader>
                     </ItemInfo>
                     <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 06</SubTitleOverview>
+                        </SubTitleContainer>
+                        <ItemHeader>
+                            <img src={errorImg} onClick={() => setOpen(true)} />
+                        </ItemHeader>
+                        <FooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px   "}>9H</TextFooterHeader>
+                        </FooterHeader>
+                    </ItemInfo>
+                    <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 07</SubTitleOverview>
+                        </SubTitleContainer>
+                        <ItemHeader>
+                            <img src={errorImg} onClick={() => setOpen(true)} />
+                        </ItemHeader>
+                        <FooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px   "}>9H</TextFooterHeader>
+                        </FooterHeader>
+                    </ItemInfo>
+                    <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 08</SubTitleOverview>
+                        </SubTitleContainer>
+                        <ItemHeader>
+                            <img src={errorImg} onClick={() => setOpen(true)} />
+                        </ItemHeader>
+                        <FooterHeader>
+                            <TextFooterHeader color="#d63031" fontSize={"20px   "}>9H</TextFooterHeader>
+                        </FooterHeader>
+                    </ItemInfo>
+                    <ItemInfo>
+                        <SubTitleContainer>
+                            <SubTitleOverview>Máquina 09</SubTitleOverview>
+                        </SubTitleContainer>
                         <ItemHeader>
                             <img src={errorImg} onClick={() => setOpen(true)} />
                         </ItemHeader>

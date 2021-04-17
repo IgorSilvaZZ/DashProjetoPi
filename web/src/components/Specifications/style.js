@@ -17,7 +17,7 @@ export const ItemsCarroussel = styled.div`
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     overflow: hidden;
-`
+`;
 
 export const Item = styled.div`
     flex: none;
@@ -30,7 +30,7 @@ export const Item = styled.div`
     height: 100%;
 
     object-fit: cover;
-}`
+}`;
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -63,6 +63,9 @@ export const CointainerGraphics = styled.div`
     border-radius: 30px;
     background: rgba(0,0,0,0.4);
     overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
 `;
 
 export const ItemGraphic = styled.div`
@@ -70,7 +73,6 @@ export const ItemGraphic = styled.div`
     height: 80%;
     border-radius: 20px;
     background: #1e272e;
-    /* font-size: 10px; */
 `;
 
 export const ContainerTopMovers = styled(CointainerGraphics)`

@@ -83,7 +83,28 @@ const Modal = ({ isOpen, onClickClose }) => {
                                 <h2>28%</h2>
                             </DivInfo>
                         </ItemInformation>
-                        <ItemInformation>
+                        <ItemInformation scrollActive>
+                            <DivInfo size={"30%"}>
+                                <img src={imgMemoryRam}  />
+                            </DivInfo>
+                            <DivInfo size={"70%"}>
+                                <p>RAM:</p>
+                                <h2>30%</h2>
+                            </DivInfo>
+                            <DivInfo size={"30%"}>
+                                <img src={imgMemoryRam}  />
+                            </DivInfo>
+                            <DivInfo size={"70%"}>
+                                <p>RAM:</p>
+                                <h2>30%</h2>
+                            </DivInfo>
+                            <DivInfo size={"30%"}>
+                                <img src={imgMemoryRam}  />
+                            </DivInfo>
+                            <DivInfo size={"70%"}>
+                                <p>RAM:</p>
+                                <h2>30%</h2>
+                            </DivInfo>
                             <DivInfo size={"30%"}>
                                 <img src={imgMemoryRam}  />
                             </DivInfo>
@@ -112,7 +133,7 @@ const Modal = ({ isOpen, onClickClose }) => {
                                 <h2>75%</h2>
                             </DivInfo>
                             <DivInfo size={"30%"}>
-                                <img src={gpuImg}  />
+                                <img src={gpuImg} onClick={() => setOpenModalDetails(true)}/>
                             </DivInfo>
                             <DivInfo size={"70%"}>
                                 <p>GPU:</p>

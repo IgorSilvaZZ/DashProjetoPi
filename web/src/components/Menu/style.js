@@ -88,7 +88,7 @@ export const ItemLogoutNavBar = styled.div`
     cursor: pointer;
     transition: all 0.3s;
     &:hover{
-        color: #ecf0f1;
+        color: #f5f6fa;
     }
 `;
 
